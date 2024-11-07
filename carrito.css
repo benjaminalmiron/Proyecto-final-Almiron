@@ -1,0 +1,44 @@
+
+
+
+
+
+.item{
+    justify-content: center;
+    margin: auto;
+}
+
+#total, #carrito-vacio{
+    text-align: center;
+}
+
+.item{
+    display: flex;
+   
+    gap: 20px;
+    justify-content: center;
+    
+}
+
+.info-producto{
+    justify-content: center;
+    width: 200px;
+}
+
+
+.item div:hover{
+    transform: scale(1.2);
+    transition: all .5s;
+}
+
+
+.item img{
+    width: 200px;
+    border-radius: 10px 10px 10px 10px; 
+    transition: all .5s;
+}
+
+item:hover{
+    box-shadow: rgba(184, 14, 14, 0.2);
+}
+
