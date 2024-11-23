@@ -15,7 +15,7 @@ function renderizarComponentes(){
         const nuevoComponente = document.createElement("div");
             nuevoComponente.classList = "container-items";
             nuevoComponente.innerHTML= `<div class= "item">
-            <figure><img class "img" src="./assets/${componente.id}.jpg"></figure>
+            <figure><img class "img" src="${componente.imagen}"></figure>
             <div class= "info-producto"><h3>${componente.nombre}</h3>
             <p>$${componente.precio}</p>
             <div>
@@ -28,7 +28,15 @@ function renderizarComponentes(){
             nuevoComponente.getElementsByTagName("button")[1].addEventListener("click", (e)=> {
                 const elementoCuenta = e.target.parentElement.getElementsByTagName("span")[0];
                 elementoCuenta.innerText = agregarAlCarrito(componente);
+                
                 actualizarTotal();
+                Toastify({
+                    text: "Componente sumado al carrito",
+                    duration: 1000,
+                    gravity: "top",
+                    position: "right",
+                    style: {background: "red"}
+                  }).showToast()
             })
             nuevoComponente.getElementsByTagName("button")[0].addEventListener("click", (e)=> {
                 
@@ -36,6 +44,13 @@ function renderizarComponentes(){
                 elementoCuenta.innerText = eliminarAlCarrito(componente);
                 renderizarComponentes()
                 actualizarTotal()
+                Toastify({
+                    text: "Componente eliminado del carrito",
+                    duration: 1000,
+                    gravity: "top",
+                    position: "right",
+                    style: {background: "red"}
+                  }).showToast()
             })
             
             
@@ -87,4 +102,11 @@ function renderizarComponentes(){
         localStorage.removeItem("componentes")
         actualizarTotal();
         renderizarComponentes()
+        Toastify({
+            text: "Carrito reiniciado con exito",
+            duration: 1000,
+            gravity: "top",
+            position: "right",
+            style: {background: "red"}
+          }).showToast()
     } 

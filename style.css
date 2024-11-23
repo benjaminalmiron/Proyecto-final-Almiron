@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 *{
     margin: 0;
     padding:0;
@@ -6,7 +9,7 @@
 
 .h1{
     list-style-type: none;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
     text-decoration: none;
     color:black;
     
@@ -14,7 +17,7 @@
 body{
     margin: 0 auto;
     max-width: 1200px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Host Grotesk", serif;
     color: black;
     list-style-type: none;
     
@@ -37,6 +40,8 @@ header{
     display: flex;
     justify-content: space-between;
     padding: 30px;
+    
+    
 }
 
 .contador-productoss{
@@ -71,6 +76,43 @@ border-radius: 10px;
     width: 25px;
     height: 25px;
 }
+
+
+.menu{
+
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    
+    padding: 20px;
+    background-color: white;
+    
+}
+
+
+
+.boton-menu{
+    padding: 20px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.boton-menu:hover{
+    transform: scale(1.5);
+    transition: all .5s;
+    color: red;
+}
+.custom-icon{
+    font-size: 30px;
+}
+
+.titulo-principal{
+    text-align: center;
+    padding: 20px;
+}
+
+
 
 
 
@@ -132,13 +174,14 @@ border-radius: 10px;
     position: relative;
 }
 
+
+
 #contenedor-componentes{
-    display: flex;
-    flex-wrap: wrap;
-    margin: auto;
-    gap: 20px;
-    justify-content: center;
-}
+    display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 20px; 
+  padding: 20px;
+  justify-content: center;}
 
 
 
@@ -160,6 +203,13 @@ border-radius: 10px;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    font-family: "Open Sans", sans-serif;
+    
+}
+
+.info-producto p{
+    font-family: "Host Grotesk", serif;
+    color: #682929;
 }
 
 .item img{
