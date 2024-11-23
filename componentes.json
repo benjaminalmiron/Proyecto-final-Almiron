@@ -1,0 +1,51 @@
+{
+    "componentes": [
+      {
+        "id": 1,
+        "nombre": "Teclado",
+        "precio": 50000,
+        "categoria": {
+          "nombre": "mouses",
+          "id": "teclados"
+        }
+      },
+      {
+        "id": 2,
+        "nombre": "Auriculares",
+        "precio": 70000,
+        "categoria": {
+          "nombre": "mouses",
+          "id": "teclados"
+        }
+      },
+      {
+        "id": 3,
+        "nombre": "Mouse",
+        "precio": 60000,
+        "categoria": {
+          "nombre": "mouses",
+          "id": "mouses"
+        }
+      },
+      {
+        "id": 4,
+        "nombre": "Monitor",
+        "precio": 100000,
+        
+        "categoria": {
+          "nombre": "mouses",
+          "id": "monitores"
+        }
+      },
+      {
+        "id": 5,
+        "nombre": "CPU",
+        "precio": 200000,
+        "categoria": {
+          "nombre": "mouses",
+          "id": "monitores"
+        }
+      }
+    ]
+  }
+    

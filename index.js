@@ -89,9 +89,10 @@ const componentes = [
 
     
   ]; 
+/* 
+  const contenedorComponentes1 = document.getElementById("contenedor-componentes")
 
- 
-/* function renderizarComponentes() {
+ function renderizarComponentes() {
   
   fetch("./componentes.json")
   
@@ -114,7 +115,7 @@ const componentes = [
           </div>
         `;
         
-        contenedorComponentes.appendChild(nuevoComponente);
+        contenedorComponentes1.appendChild(nuevoComponente);
 
        
         nuevoComponente
@@ -126,7 +127,7 @@ const componentes = [
 }
 
 renderizarComponentes()
- */
+  */
 
 
   const contenedorComponentes = document.getElementById("contenedor-componentes")
