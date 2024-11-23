@@ -35,7 +35,7 @@ function renderizarComponentes(){
                     duration: 1000,
                     gravity: "top",
                     position: "right",
-                    style: {background: "red"}
+                    style: {background: "#E55A66"}
                   }).showToast()
             })
             nuevoComponente.getElementsByTagName("button")[0].addEventListener("click", (e)=> {
@@ -49,7 +49,7 @@ function renderizarComponentes(){
                     duration: 1000,
                     gravity: "top",
                     position: "right",
-                    style: {background: "red"}
+                    style: {background: "#E55A66"}
                   }).showToast()
             })
             
@@ -107,6 +107,6 @@ function renderizarComponentes(){
             duration: 1000,
             gravity: "top",
             position: "right",
-            style: {background: "red"}
+            style: {background: "#E55A66"}
           }).showToast()
     } 

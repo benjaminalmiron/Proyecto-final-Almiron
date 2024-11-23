@@ -154,7 +154,7 @@ renderizarComponentes()
               duration: 1000,
               gravity: "top",
               position: "right",
-              style: {background: "red"}
+              style: {background: "#E55A66"}
             }).showToast()
           }
             )
